@@ -2,7 +2,7 @@
   "name": "learning",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://anacondazz2.github.io/tic-tac-toe",
+  "homepage": "https://anacondazz2.github.io/React-Tic-tac-toe",
 
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
