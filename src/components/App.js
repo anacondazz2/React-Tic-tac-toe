@@ -3,7 +3,7 @@ import Board from "./board";
 import calculateWinner from "../helperFunctions.js/calculateWinner";
 
 /*  cd path:
-cd C:\Users\Patri\OneDrive\Desktop\Web Projects\React Projects\tic_tac_toe
+cd '/c/Users/Patri/OneDrive/Desktop/Web Projects/React Projects/tic_tac_toe'
 */
 
 class App extends Component {
@@ -70,7 +70,7 @@ class App extends Component {
             : JSON.parse(JSON.stringify(this.state.history)).reverse();
       const current = this.state.history[this.state.move_number]; // current may change if the user jumps to part of the history
 
-      const moves = history.map((step, move) => {
+      const moves = history.map((step, i) => {
          const desc =
             step.move_number === 0
                ? "Go to game start"
@@ -82,12 +82,14 @@ class App extends Component {
                  step.position.row +
                  ", col " +
                  step.position.col;
+         
          return (
-            <li key={move}>
+            <li key={i}>
                <button
                   onClick={() => {
                      this.jumpTo(step.move_number);
                   }}
+                  className={step.move_number === this.state.move_number ? "curr-move" : ""}
                >
                   {desc}
                </button>

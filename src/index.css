@@ -2,76 +2,79 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Ubuntu:ital,wght@0,500;0,700;1,400&display=swap");
 
 * {
-  font-family: "Inter", "Ubuntu", sans-serif;
+   font-family: "Inter", "Ubuntu", sans-serif;
 }
 
 body {
-  background-color: beige;
+   background-color: beige;
 }
 
 .title {
-  margin-top: 60px;
-  text-align: center;
-  font-weight: 500;
-  font-size: 50px;
+   margin-top: 60px;
+   text-align: center;
+   font-weight: 500;
+   font-size: 50px;
 }
 .game {
-  margin-top: 60px;
-  display: flex;
-  height: 100vh;
-  align-items: flex-start;
-  justify-content: center;
+   margin-top: 60px;
+   display: flex;
+   height: 100vh;
+   align-items: flex-start;
+   justify-content: center;
 }
 .board-row::after {
-  clear: both;
-  content: "";
-  display: table;
+   clear: both;
+   content: "";
+   display: table;
 }
 .board-row .square {
-  background: #fff;
-  border: 1px solid #999;
-  float: left;
-  font-size: 30px;
-  font-weight: bold;
-  line-height: 34px;
-  height: 50px;
-  margin-right: -1px;
-  margin-top: -1px;
-  padding: 0;
-  text-align: center;
-  width: 50px;
+   background: #fff;
+   border: 1px solid #999;
+   float: left;
+   font-size: 30px;
+   font-weight: bold;
+   line-height: 34px;
+   height: 50px;
+   margin-right: -1px;
+   margin-top: -1px;
+   padding: 0;
+   text-align: center;
+   width: 50px;
 }
 .board-row .square:focus {
-  outline: none;
+   outline: none;
 }
 .game-info {
-  margin-left: 60px;
-  font-size: 20px;  
+   margin-left: 60px;
+   font-size: 20px;
 }
 .game-info .toggle-btn {
-  font-size: 20px;
-  border-radius: 20px;
-  padding: 15px;
-  border-style: none;
-  background-color: orange;
-  border: 1px solid black;
+   font-size: 20px;
+   border-radius: 20px;
+   padding: 15px;
+   border-style: none;
+   background-color: orange;
+   border: 1px solid black;
 }
 .game-info li {
-  margin-bottom: 10px;
+   margin-bottom: 10px;
 }
 .game-info li button {
-  font-size: 20px;
-  padding: 7px;
-  border-radius: 12px;
-  border: 1px solid grey;
-  transition: all 0.3s ease;
+   font-size: 20px;
+   padding: 9px;
+   border-radius: 18px;
+   border: 1px solid grey;
+   transition: all 0.3s ease;
 }
-.game-info li button:focus {
-  filter: brightness(85%);
+.game-info li button:hover {
+   filter: brightness(85%);
+}
+.game-info button.curr-move {  
+   border: 3px solid crimson;
 }
 .status {
-  margin-bottom: 10px;
+   margin-bottom: 10px;
 }
 .winnerHighlight {
-  background-color: lime;
+   background-color: lime;
 }
