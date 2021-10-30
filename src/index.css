@@ -1,13 +1,77 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* import google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Ubuntu:ital,wght@0,500;0,700;1,400&display=swap");
+
+* {
+  font-family: "Inter", "Ubuntu", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: beige;
+}
+
+.title {
+  margin-top: 60px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 50px;
+}
+.game {
+  margin-top: 60px;
+  display: flex;
+  height: 100vh;
+  align-items: flex-start;
+  justify-content: center;
+}
+.board-row::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.board-row .square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 50px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 50px;
+}
+.board-row .square:focus {
+  outline: none;
+}
+.game-info {
+  margin-left: 60px;
+  font-size: 20px;  
+}
+.game-info .toggle-btn {
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 15px;
+  border-style: none;
+  background-color: orange;
+  border: 1px solid black;
+}
+.game-info li {
+  margin-bottom: 10px;
+}
+.game-info li button {
+  font-size: 20px;
+  padding: 7px;
+  border-radius: 12px;
+  border: 1px solid grey;
+  transition: all 0.3s ease;
+}
+.game-info li button:focus {
+  filter: brightness(85%);
+}
+.status {
+  margin-bottom: 10px;
+}
+.winnerHighlight {
+  background-color: lime;
 }
