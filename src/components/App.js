@@ -2,8 +2,11 @@ import React, { Component } from "react";
 import Board from "./board";
 import calculateWinner from "../helperFunctions.js/calculateWinner";
 
-/*  cd path:
+/*  bash cd path:
 cd '/c/Users/Patri/OneDrive/Desktop/Web Projects/React Projects/tic_tac_toe'
+
+cmd cd path:
+C:\Users\Patri\OneDrive\Desktop\Web Projects\React Projects\tic_tac_toe
 */
 
 class App extends Component {
